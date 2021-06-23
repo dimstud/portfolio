@@ -14,7 +14,7 @@ const imagemin = require('gulp-imagemin');
 
 // Таск для сборки Gulp файлов
 gulp.task('pug', function(callback) {
-	return gulp.src(['src/pug/**/*.pug', '!src/pug/layouts/**/*'])
+	return gulp.src(['src/pug/**/*.pug', '!src/pug/layouts/**/*', '!src/pug/mixins/**/*'])
 		.pipe( plumber({
 			errorHandler: notify.onError(function(err){
 				return {

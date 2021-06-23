@@ -107,7 +107,8 @@ gulp.task('watch', function() {
 
 	// Следим за картинками и скриптами, и копируем их в dist
 	// watch('./src/img/**/*.*', gulp.parallel('copy:img'))
-	watch('./src/js/**/*.*', gulp.parallel('copy:js'))
+	// watch('./src/js/**/*.*', gulp.parallel('copy:js'))
+	gulp.watch("src/js/**/*").on('all', gulp.parallel('copy:js'));
 	gulp.watch("src/img/**/*").on('all', gulp.parallel('copy:img'));
 
 });

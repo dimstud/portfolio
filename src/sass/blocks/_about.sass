@@ -3,7 +3,7 @@
 	&__wrapper
 		display: grid
 		grid-template-columns: 400px 670px
-		grid-template-rows: minmax(245px, auto) minmax(255px, auto)
+		grid-template-rows: 245px minmax(255px, auto)
 		grid-auto-rows: minmax(245px, auto)
 		column-gap: 70px
 		row-gap: 40px
@@ -25,5 +25,12 @@
 		padding-left: 12px
 		+before_circle
 	&__skills
+		display: grid
 		grid-column: 2/3
 		grid-row: 2/3
+		grid-template: repeat(2, minmax(116px, auto)) / repeat(2, 260px) 
+		grid-template-rows: 116px 116px
+		&-item
+			display: grid
+			grid-template-columns: 40px 200px
+			column-gap: 20px

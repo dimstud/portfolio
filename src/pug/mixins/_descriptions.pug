@@ -14,3 +14,9 @@ mixin resume__item(img, title, location, body)
 			h4.resume__item-title.title.title_fz14 #{title}
 			.resume__item-location #{location} 
 		.resume__item-body #{body}
+
+mixin skills__item(img, title)
+	.skills__item
+		.skills__item-img 
+			img(src="img/skills"+img+".svg", alt="img")
+		.skills__item-title #{title}

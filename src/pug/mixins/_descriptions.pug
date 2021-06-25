@@ -5,3 +5,12 @@ mixin about__skills-item(img, title, text)
 		div
 			.about__skills-title.title.title_fz14 #{title}
 			.about__skills-text.title.title_fz12 #{text}
+
+mixin resume__item(img, title, location, body)
+	.resume__item
+		.resume__item-head 
+			.resume__item-icon 
+				img(src="img/icons/resume/"+ img+".svg", alt=img)
+			h4.resume__item-title.title.title_fz14 #{title}
+			.resume__item-location #{location} 
+		.resume__item-body #{body}

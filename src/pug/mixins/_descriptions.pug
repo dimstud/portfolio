@@ -32,3 +32,9 @@ mixin skills__ratings-item(title, counter)
 mixin portfolio__item(img, vertical=false, horizontal=false)
 	a.portfolio__item(href="#" class=vertical calass=horizontal) 
 		img(src="img/portfolio/"+img+".jpg", alt=img)
+
+mixin price__item(type, count, descr)
+	.price__item
+		.price__type #{type}
+		.price__count #{count}
+		.price__descr #{descr}

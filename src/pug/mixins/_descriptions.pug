@@ -19,12 +19,16 @@ mixin skills__item(img, title, body)
 	.skills__item
 		.skills__item-img 
 			img(src="img/skills/"+img+".svg", alt="img")
-		h3.skills__item-title.title.title_fz14 #{title}
+		h4.skills__item-title.title.title_fz14 #{title}
 		p.skills__body #{body}
 
 mixin skills__ratings-item(title, counter)
 	.skills__ratings-item
-		.skills__ratings-title #{title}
+		h4.skills__ratings-title.title.title_fz14 #{title}
 		.skills__ratings-counter #{counter}
 		.skills__ratings-line
 			span
+
+mixin portfolio__item(img, vertical=false, horizontal=false)
+	a.portfolio__item(href="#" class=vertical calass=horizontal) 
+		img(src="img/portfolio/"+img+".jpg", alt=img)

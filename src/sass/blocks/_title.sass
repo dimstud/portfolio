@@ -20,3 +20,15 @@
 	&_fz48
 		font-size: 48px
 		line-height: 60px
+	&_c
+		position: relative
+		padding-top: 6px
+		text-align: center
+		+before_circle
+		&::before
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+	&__subtitle_c
+		padding-top: 6px
+		text-align: center

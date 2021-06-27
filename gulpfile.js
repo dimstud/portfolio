@@ -91,6 +91,20 @@ gulp.task('copy:js', function(callback) {
 	callback();
 });
 
+// Копирование uber
+gulp.task('copy:uber', function(callback) {
+	return gulp.src('./src/uber/**/*.*')
+		.pipe(gulp.dest('./dist/uber/'))
+	callback();
+});
+
+// Копирование pulse
+gulp.task('copy:pulse', function(callback) {
+	return gulp.src('./src/pulse/**/*.*')
+		.pipe(gulp.dest('./dist/pulse/'))
+	callback();
+});
+
 // Слежение за HTML и CSS и обновление браузера
 gulp.task('watch', function() {
 
@@ -132,7 +146,7 @@ gulp.task(
 		'default', 
 		gulp.series( 
 			gulp.parallel('clean:dist'),
-			gulp.parallel('sass', 'pug','copy:fonts', 'copy:img', 'copy:css', 'copy:js', 'copy:mailer'), 
+			gulp.parallel('sass', 'pug','copy:fonts', 'copy:img', 'copy:css', 'copy:js', 'copy:mailer', 'copy:uber', 'copy:pulse'), 
 			gulp.parallel('server', 'watch'), 
 			)
 	);

@@ -18,13 +18,17 @@ section.contacts
 				.contacts__text Или оставьте ваши данные и я сама вам напишу:
 				form.contacts__form(action="#")
 					.contacts__input
-						input#name(type="name")
+						input#name(type="name", required)
 						label(for="name") Ваше имя
 					.contacts__input
-						input#email(type="email")
+						input#email(type="email", required)
 						label(for="email") Ваша почта
 					.contacts__textarea
 						textarea#text(name="text") 
 						label(for="text") Ваше сообщение
-					div
+					.contacts__triggers
 						button.btn.btn__form Отправить сообщение
+						.contacts__policy 
+							input(type="checkbox", required)
+							span Я согласен(а) 
+								a(href="/policy.html") с политикой конфиденциальности

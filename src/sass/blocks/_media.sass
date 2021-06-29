@@ -12,6 +12,14 @@
 		&__wrapper
 			grid-template-columns: 320px 590px
 			column-gap: 50px
+	.resume
+		&__wrapper
+			padding: 60px 20px 0 20px
+			column-gap: 60px
+		&__column
+			ul
+				li::before
+					top: -8px
 
 
 @media ( max-width: 992px )
@@ -35,6 +43,10 @@
 			grid-template-columns: 1fr
 			grid-template-rows: minmax(116px, auto)
 			grid-auto-rows: minmax(116px, auto)
+	.resume
+		&__wrapper
+			grid-template-columns: repeat(2, 340px)
+			column-gap: 40px
 
 
 @media ( max-width: 768px )
@@ -70,6 +82,11 @@
 		&_fz36
 			font-size: 24px
 			line-height: 36px
+	.resume
+		padding-top: 40px
+		&__wrapper
+			grid-template-columns: 1fr
+			column-gap: unset
 
 
 @media ( max-width: 576px )
@@ -86,3 +103,7 @@
 		&__skills
 			&-item
 				grid-template-columns: 40px 216px
+	.resume
+		&__wrapper
+			padding-right: 0
+			padding-left: 0

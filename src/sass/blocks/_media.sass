@@ -8,6 +8,10 @@
 		max-width: 960px
 	.promo
 		background: url("../img/main_bg.jpg") 70%/cover
+	.about
+		&__wrapper
+			grid-template-columns: 320px 590px
+			column-gap: 50px
 
 
 @media ( max-width: 992px )
@@ -22,6 +26,15 @@
 		&_fz48
 			font-size: 36px
 			line-height: 60px
+	.about
+		&__wrapper
+			grid-template-columns: 320px 370px
+			column-gap: 40px
+		&__skills
+			grid-row: unset
+			grid-template-columns: 1fr
+			grid-template-rows: minmax(116px, auto)
+			grid-auto-rows: minmax(116px, auto)
 
 
 @media ( max-width: 768px )
@@ -35,10 +48,28 @@
 		&__block
 			width: 250px
 			padding-left: 20px
+	.about
+		padding-top: 40px
+		.title
+			&_fz36
+				margin-top: 26px
+		&__wrapper
+			grid-template-columns: auto
+			grid-template-rows: 340px
+		&__photo
+			grid-row: unset
+		&__skills
+			grid-column: unset
+			grid-template-columns: auto
+			&-item
+				grid-template-columns: 40px 300px
 	.title
 		&_fz48
 			font-size: 26px
 			line-height: 39px
+		&_fz36
+			font-size: 24px
+			line-height: 36px
 
 
 @media ( max-width: 576px )
@@ -49,3 +80,9 @@
 		background: url("../img/main_bg.jpg") 56%/cover
 		&__title
 			width: auto
+	.about
+		&__wrapper
+			row-gap: 20px
+		&__skills
+			&-item
+				grid-template-columns: 40px 216px

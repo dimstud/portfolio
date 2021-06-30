@@ -64,6 +64,11 @@
 		&__wrapper
 			grid-template-columns: repeat(2, 340px)
 			column-gap: 40px
+	.price
+		&__wrapper
+			padding-right: 0
+			padding-left: 0
+			grid-template-columns: repeat(2, 350px)
 
 
 @media ( max-width: 768px )
@@ -112,6 +117,12 @@
 		padding-top: 40px
 		&__wrapper
 			margin-top: 40px
+			column-gap: 40px
+	.price
+		&__wrapper
+			grid-template-columns: repeat(auto-fit, 350px)
+			justify-content: center
+			row-gap: 20px
 
 
 @media ( max-width: 576px )
@@ -134,4 +145,7 @@
 			padding-left: 0
 	.skills
 		&__ratings
+			grid-template-columns: repeat(auto-fit, 290px)
+	.price
+		&__wrapper
 			grid-template-columns: repeat(auto-fit, 290px)

@@ -27,7 +27,17 @@
 		&__ratings
 			grid-template-columns: repeat(auto-fit, 350px)
 			justify-content: space-around
-		&-line
+	.portfolio 
+		&__wrapper
+			grid-template-columns: repeat(auto-fit, 280px)
+			justify-content: space-around
+			row-gap: 20px
+			.vertical
+				grid-row: unset
+				grid-column: unset
+			.horizontal
+				grid-column: unset
+
 
 @media ( max-width: 992px )
 	.container
@@ -98,6 +108,10 @@
 		padding-top: 40px
 		&__items
 			padding-top: 40px
+	.portfolio 
+		padding-top: 40px
+		&__wrapper
+			margin-top: 40px
 
 
 @media ( max-width: 576px )

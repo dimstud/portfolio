@@ -20,7 +20,13 @@
 			ul
 				li::before
 					top: -8px
-
+	.skills
+		&__items
+			grid-template-columns: repeat(auto-fit, 270px)
+			justify-content: space-around
+		&__ratings
+			grid-template-columns: repeat(auto-fit, 350px)
+			justify-content: space-around
 
 @media ( max-width: 992px )
 	.container

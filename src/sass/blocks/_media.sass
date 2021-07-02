@@ -37,6 +37,11 @@
 				grid-column: unset
 			.horizontal
 				grid-column: unset
+	.contacts
+		&__wrapper
+			grid-template-columns: 1fr
+		&__photo
+			display: none
 
 
 @media ( max-width: 992px )
@@ -123,6 +128,29 @@
 			grid-template-columns: repeat(auto-fit, 350px)
 			justify-content: center
 			row-gap: 20px
+	.contacts
+		padding-top: 40px
+		margin-bottom: 80px
+		&__wrapper
+			padding-right: 0
+			padding-left: 0
+		&__form
+			grid-template: 45px 45px 190px 45px / 1fr
+		&__textarea
+			grid-column: unset
+		&__triggers
+			grid-template: repeat(2, minmax(45px, auto)) / 1fr
+			grid-column: unset
+			line-height: 18px
+			column-gap: unset
+			.btn
+				width: auto
+				order: 2
+				margin: 20px auto 0px auto
+		&__policy
+			width: auto
+			margin-right: auto
+			margin-left: auto
 
 
 @media ( max-width: 576px )
@@ -149,3 +177,9 @@
 	.price
 		&__wrapper
 			grid-template-columns: repeat(auto-fit, 290px)
+	.contacts
+		&__triggers
+			.btn
+				max-width: 220px
+		&__policy
+			width: 180px
